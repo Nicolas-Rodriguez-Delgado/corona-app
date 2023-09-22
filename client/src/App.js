@@ -41,6 +41,7 @@ function App() {
     }
   };
 
+  // Fetch data only when a state is selected from the dropdown
   useEffect(() => {
     fetchDataByState(selectedState);
   }, [selectedState]);
