@@ -39,5 +39,3 @@ function Dropdown({ selectedState, onChange }) {
   }
 
 export default Dropdown;
-
-

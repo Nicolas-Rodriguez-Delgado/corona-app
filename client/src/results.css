@@ -1,0 +1,33 @@
+.results-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box {
+    border: 2px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5%;
+  }
+  
+  .variable {
+    font-size: 18px;
+    margin-top: 8px;
+  }
+  
+  .red {
+    color: red;
+  }
+  
+  .green {
+    color: green;
+  }
+  
+  @media (max-width: 600px) {
+    .results-container {
+        flex-direction: column;
+      }
+  }

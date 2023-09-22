@@ -47,7 +47,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1>Covid-19 Data</h1>
+      <h1>Covid-19</h1>
 
       <div className="content-container"> 
         <h2>Germany</h2>
