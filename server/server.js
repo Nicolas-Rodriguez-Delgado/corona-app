@@ -7,12 +7,12 @@ const PORT = process.env.PORT || 3001;
 app.use(express.json());
 app.use(cors());
 
-// Health Check Endpoint
+// Health check
 app.get('/health', (req, res) => {
   res.status(200).json({ status: 'Healthy' });
 });
 
-// API Endpoint to Fetch Covid-19 Data
+// API fetch germany Covid-19 data
 app.get('/api/data', async (req, res) => {
   try {
     const response = await axios.get(`https://api.corona-zahlen.org/germany`);
@@ -23,6 +23,7 @@ app.get('/api/data', async (req, res) => {
   }
 });
 
+// API to fetch state specific Covid-19 data
 app.get('/api/data/:state', async (req, res) => {
     const state = req.params.state;
     const stateAbbreviation = req.params.state.toUpperCase();

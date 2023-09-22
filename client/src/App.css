@@ -1,0 +1,26 @@
+/* Center the outer container content */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Center the inner content */
+  .content-container {
+    text-align: center;
+    padding: 60px;
+    border: 1px solid #ccc; /* Border for color distinction */
+    background-color: #fff; /* White background color */
+  }
+  
+  /* Loading text style */
+  .loading {
+    color: #007bff; /* Blue color for loading text */
+    font-weight: bold;
+  }
+
+  .state-container {
+    margin-top: 48px;
+  }
+  
