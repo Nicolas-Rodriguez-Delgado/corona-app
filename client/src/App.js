@@ -20,7 +20,7 @@ function App() {
 
   const fetchGermanyData = async () => {
     try {
-      const response = await axios.get('http://localhost:3001/api/data');
+      const response = await axios.get('http://localhost:3001/germany');
       setGermanyData(response.data);
       setIsLoadingGermanyData(false);
     } catch (error) {
@@ -31,7 +31,7 @@ function App() {
   const fetchDataByState = async (state) => {
     try {
       if (state) {
-        const response = await axios.get(`http://localhost:3001/api/data/${state}`);
+        const response = await axios.get(`http://localhost:3001/germany/${state}`);
         setStateData(response.data.data);
       }
     } catch (error) {

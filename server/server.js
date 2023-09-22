@@ -13,7 +13,7 @@ app.get('/health', (req, res) => {
 });
 
 // API fetch germany Covid-19 data
-app.get('/api/data', async (req, res) => {
+app.get('/germany', async (req, res) => {
   try {
     const response = await axios.get(`https://api.corona-zahlen.org/germany`);
     res.json(response.data);
@@ -24,7 +24,7 @@ app.get('/api/data', async (req, res) => {
 });
 
 // API to fetch state specific Covid-19 data
-app.get('/api/data/:state', async (req, res) => {
+app.get('/germany/:state', async (req, res) => {
     const state = req.params.state;
     const stateAbbreviation = req.params.state.toUpperCase();
     try {
